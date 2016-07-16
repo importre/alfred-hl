@@ -9,14 +9,14 @@
 > unicode support :tada:
 
 
-# Usage
+## Usage
 
-## Copy code snippet to clipboard
+### Copy code snippet to clipboard
 
 - <kbd>cmd</kbd> + <kbd>C</kbd>
 
 
-## Set Theme (Optional)
+### Set Theme (Optional)
 
 > Default theme: `github`
 
@@ -26,7 +26,7 @@
 <img width="600" src="https://cloud.githubusercontent.com/assets/1744446/16896907/ca069908-4bdc-11e6-9331-ef5a5e182344.png">
 
 
-## Highlight code
+### Highlight code
 
 - Type `hl`, <kbd>Enter</kbd>, find the language you want
 - <kbd>Cmd</kbd> + <kbd>V</kbd> to the rich text editor like [Pages](http://www.apple.com/mac/pages/)
