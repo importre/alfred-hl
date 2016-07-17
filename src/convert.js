@@ -121,8 +121,8 @@ function convertToRtf(lang) {
   const parser = new htmlparser.Parser(handler);
   parser.parseComplete(rawHtml);
 
-  const bg = bgcolor ? 'best bgcolor: ' + bgcolor + '\\line\\line\n' : '';
-  const result = bg + handler.dom.map(elem => convert(elem)).join('\n');
+  const bg = bgcolor ? '\n\\line\\line\nbgcolor: ' + bgcolor : '';
+  const result = handler.dom.map(elem => convert(elem)).join('\n') + bg;
 
   return rtfHeader + result + '}';
 }
