@@ -6,10 +6,10 @@ const htmlparser = require("htmlparser");
 const entities = require("entities");
 const css = require('css');
 const one = require('onecolor');
-const theme = require('./utils').theme;
+const utils = require('./utils');
 
 const input = alfy.input.toLowerCase();
-const cssPath = 'node_modules/highlight.js/styles/' + theme + '.css';
+const cssPath = 'node_modules/highlight.js/styles/' + utils.theme + '.css';
 const cssData = fs.readFileSync(cssPath, {
   encoding: 'utf8'
 });
@@ -98,18 +98,11 @@ function convert(elem) {
     for (var i = 0; i < token[0].length; i++) {
       buff.push('\\u' + token[0].charCodeAt(i));
     }
-    // return color + ' ' + token[0];
     return color + ' ' + buff.join('');
   });
 
   return result.join('');
 }
-
-const rtfHeader = `{\\rtf1\\ansi
-{\\fonttbl\\f0\\fmodern\\fcharset0 Courier;}
-{\\colortbl;` + Object.keys(cssMap).map(i => cssMap[i]).join(';') + ';' + `}
-\\f0\\fs24
-`;
 
 function convertToRtf(lang) {
   const code = cp.spawnSync('pbpaste', {
@@ -121,10 +114,11 @@ function convertToRtf(lang) {
   const parser = new htmlparser.Parser(handler);
   parser.parseComplete(rawHtml);
 
+  const colorList = Object.keys(cssMap).map(i => cssMap[i]).join(';');
+  const codeBlock = handler.dom.map(elem => convert(elem)).join('\n');
   const bg = bgcolor ? '\n\\line\\line\nbgcolor: ' + bgcolor : '';
-  const result = handler.dom.map(elem => convert(elem)).join('\n') + bg;
 
-  return rtfHeader + result + '}';
+  return utils.getRtf(colorList, codeBlock, bg);
 }
 
 cp.spawnSync('pbcopy', {
