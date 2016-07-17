@@ -246,13 +246,13 @@
 	</array>
 	<key>readme</key>
 	<string># hl
-- colorize you code by selecting language
+- Highlight code stored in clipboard
 
 # hl-theme
-- set default theme
+- Set default theme
 
 # hl-demo
-- show highlight demo</string>
+- Show highlight demo</string>
 	<key>uidata</key>
 	<dict>
 		<key>0CFFA60D-8434-4DE7-A4B9-B284AB8818AA</key>
@@ -299,7 +299,7 @@
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>0.1.2</string>
+	<string>0.1.3</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
