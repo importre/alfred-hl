@@ -2,7 +2,7 @@
 
 > [Alfred 3](https://www.alfredapp.com) workflow to syntax highlight code in the clipboard using [highlight.js](https://highlightjs.org/)
 
-| plain code | colorized code |
+| plain text | colorized text |
 |:----------:|:--------------:|
 | ![][plain] | ![][colorized] |
 
@@ -30,7 +30,7 @@
 
 - Type `hl`, <kbd>Space</kbd>, find the language you want
 - <kbd>Enter</kbd>
-- <kbd>Cmd</kbd> + <kbd>V</kbd> to the rich text editor like [Pages](http://www.apple.com/mac/pages/)
+- <kbd>Cmd</kbd> + <kbd>V</kbd> to the rich text editor like [Pages](http://www.apple.com/mac/pages/), [Keynote](http://www.apple.com/kr/mac/keynote/)
 
 <img width="600" src="https://cloud.githubusercontent.com/assets/1744446/16896906/ca05f44e-4bdc-11e6-86a5-830ada1ba4e2.png">
 
@@ -53,3 +53,4 @@ MIT © Jaewe Heo
 
 [colorized]: https://cloud.githubusercontent.com/assets/1744446/16908802/3da56100-4d09-11e6-9a4a-ef73a06014bf.png
 [plain]: https://cloud.githubusercontent.com/assets/1744446/16908803/3dae39e2-4d09-11e6-8d7e-f7cc25119fa7.png
+
