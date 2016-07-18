@@ -1,6 +1,6 @@
 # alfred-hl
 
-> [Alfred 3](https://www.alfredapp.com) workflow to highlight syntax using [highlight.js](https://highlightjs.org/)
+> [Alfred 3](https://www.alfredapp.com) workflow to syntax highlight code in the clipboard using [highlight.js](https://highlightjs.org/)
 
 | plain code | colorized code |
 |:----------:|:--------------:|
