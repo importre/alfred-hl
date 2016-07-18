@@ -51,5 +51,5 @@
 
 MIT © Jaewe Heo
 
-[plain]: https://cloud.githubusercontent.com/assets/1744446/16908658/58af0a74-4d08-11e6-9b33-7873b068d507.png
-[colorized]: https://cloud.githubusercontent.com/assets/1744446/16908657/588e4e7e-4d08-11e6-8b86-5cc9f0343ae8.png
+[colorized]: https://cloud.githubusercontent.com/assets/1744446/16908802/3da56100-4d09-11e6-9a4a-ef73a06014bf.png
+[plain]: https://cloud.githubusercontent.com/assets/1744446/16908803/3dae39e2-4d09-11e6-8d7e-f7cc25119fa7.png
