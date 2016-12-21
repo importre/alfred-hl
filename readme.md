@@ -9,6 +9,11 @@
 > unicode support :tada:
 
 
+## Prerequisites
+
+You need [Node.js 4+](https://nodejs.org) and [Alfred 3](https://www.alfredapp.com) with the paid [Powerpack](https://www.alfredapp.com/powerpack/) upgrade.
+
+
 ## Usage
 
 ### Copy code snippet to clipboard
@@ -37,9 +42,9 @@
 
 ## Install
 
-[Install the workflow.](http://www.packal.org/workflow/hl)
-
-*Requires [Node.js](https://nodejs.org) 4+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
+```
+$ npm i -g alfred-hl
+```
 
 
 ## Reference
