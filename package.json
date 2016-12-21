@@ -1,6 +1,6 @@
 {
   "name": "alfred-hl",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Syntax highlight code in the clipboard",
   "license": "MIT",
   "repository": "importre/alfred-hl",
