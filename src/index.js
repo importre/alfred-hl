@@ -1,5 +1,6 @@
 const fs = require('fs');
 const alfy = require('alfy');
+const alfredNotifier = require('alfred-notifier');
 const utils = require('./utils');
 
 const input = alfy.input.toLowerCase();
@@ -31,5 +32,6 @@ const output = fs
   })
   .sort();
 
+alfredNotifier();
 alfy.output(output);
 

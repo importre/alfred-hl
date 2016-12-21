@@ -1,9 +1,41 @@
 {
+  "name": "alfred-hl",
+  "version": "0.1.5",
+  "description": "Syntax highlight code in the clipboard",
+  "license": "MIT",
+  "repository": "importre/alfred-hl",
+  "author": {
+    "name": "Jaewe Heo",
+    "email": "jaeweheo@gmail.com",
+    "url": "importre.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "files": [
+    "src",
+    "icon.png",
+    "info.plist"
+  ],
+  "keywords": [
+    "alfred",
+    "highlight",
+    "highlight.js",
+    "syntax",
+    "code",
+    "language",
+    ""
+  ],
   "dependencies": {
-    "alfy": "^0.2.1",
+    "alfred-notifier": "^0.2.0",
+    "alfy": "^0.6.0",
     "css": "^2.2.1",
     "entities": "^1.1.1",
-    "highlight.js": "^9.5.0",
+    "highlight.js": "^9.9.0",
     "htmlparser": "^1.7.7",
     "onecolor": "^3.0.4"
   }
