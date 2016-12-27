@@ -1,4 +1,6 @@
-# alfred-hl
+# <div align="center"><img src="./icon.png" width=256><br>alfred-hl</div>
+
+[![dependencies Status](https://david-dm.org/importre/alfred-hl/status.svg)](https://david-dm.org/importre/alfred-hl)
 
 > [Alfred 3](https://www.alfredapp.com) workflow to syntax highlight code in the clipboard using [highlight.js](https://highlightjs.org/)
 
