@@ -37,6 +37,7 @@ You need [Node.js 4+](https://nodejs.org) and [Alfred 3](https://www.alfredapp.c
 
 - Type `hl`, <kbd>Space</kbd>, find the language you want
 - <kbd>Enter</kbd>
+    - <kbd>Enter</kbd> + <kbd>Cmd</kbd> if you want to prevent indentation
 - <kbd>Cmd</kbd> + <kbd>V</kbd> to the rich text editor like [Pages](http://www.apple.com/mac/pages/), [Keynote](http://www.apple.com/kr/mac/keynote/)
 
 <img width="600" src="https://cloud.githubusercontent.com/assets/1744446/16896906/ca05f44e-4bdc-11e6-86a5-830ada1ba4e2.png">

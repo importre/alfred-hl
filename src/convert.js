@@ -7,6 +7,7 @@ const entities = require("entities");
 const css = require('css');
 const one = require('onecolor');
 const utils = require('./utils');
+const stripIndent = require('strip-indent');
 
 const input = alfy.input.toLowerCase();
 const cssPath = 'node_modules/highlight.js/styles/' + utils.theme + '.css';
@@ -104,11 +105,12 @@ function convert(elem) {
   return result.join('');
 }
 
-function convertToRtf(lang) {
-  const code = cp.spawnSync('pbpaste', {
+function convertToRtf(lang, removeIndent) {
+  const data = cp.spawnSync('pbpaste', {
     encoding: 'utf8'
   }).stdout;
 
+  const code = removeIndent ? stripIndent(data) : data;
   const rawHtml = hljs.highlight(lang, code).value;
   const handler = new htmlparser.DefaultHandler();
   const parser = new htmlparser.Parser(handler);
@@ -123,6 +125,6 @@ function convertToRtf(lang) {
 
 cp.spawnSync('pbcopy', {
   encoding: 'utf8',
-  input: convertToRtf(input),
+  input: convertToRtf(input, process.argv[3] === 'remove-indent'),
 });
 

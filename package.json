@@ -35,8 +35,9 @@
     "alfy": "^0.6.0",
     "css": "^2.2.1",
     "entities": "^1.1.1",
-    "highlight.js": "^9.9.0",
+    "highlight.js": "^9.10.0",
     "htmlparser": "^1.7.7",
-    "onecolor": "^3.0.4"
+    "onecolor": "^3.0.4",
+    "strip-indent": "^2.0.0"
   }
 }
