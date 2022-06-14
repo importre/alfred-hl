@@ -34,8 +34,8 @@
     "alfred-notifier": "^0.2.3",
     "alfy": "^0.9.1",
     "css": "^2.2.4",
-    "entities": "^2.0.0",
-    "highlight.js": "^9.18.1",
+    "entities": "^2.2.0",
+    "highlight.js": "^11.5.1",
     "htmlparser": "^1.7.7",
     "onecolor": "^3.1.0",
     "strip-indent": "^3.0.0"
