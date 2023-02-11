@@ -32,7 +32,7 @@
   ],
   "dependencies": {
     "alfred-notifier": "^0.2.3",
-    "alfy": "^0.9.1",
+    "alfy": "^1.1.0",
     "css": "^2.2.4",
     "entities": "^2.2.0",
     "highlight.js": "^11.5.1",
